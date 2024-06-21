@@ -25,4 +25,5 @@ Một số kiếp nạn khi setup cái thư viện củ cak kia vào dự án:
   - Có thể sử dụng DriverManager, tuy nhiên con này sẽ TỰ ĐỘNG TẢI PHIÊN BẢN 114 về? Vl luôn?
 Và MMD mất thêm một tiếng nữa lục lọi khắp stackoverflow & chatGPT, cho đến khi tìm được trang web này:
 _https://googlechromelabs.github.io/chrome-for-testing/#beta_
-Thiên đường UwU
+
+
