@@ -11,3 +11,18 @@ _"Thay vì down sách về, sao mình không cào toàn bộ các chương về,
 
 Và đó là lí do dự án này ra đời :>
 
+# Day 1
+Về cơ bản, backend của dự án gồm hai tính năng chính:
+- Cào web: Sử dụng selenium để anti bọn load web = javascript
+- Convert văn bản cào được thành code latex
+Ngày đầu tiên sẽ tập trung vào setup Selenium - một trải nghiệm đau đơn về cả thể chất lẫn tinh thần
+
+Một số kiếp nạn khi setup cái thư viện củ cak kia vào dự án:
+- Chọn sai loại dự án: Dự án Java có thể thêm maven, nhưng dự án maven không thể thêm Java (dễ dàng). ĐỪNG BAO GIỜ chọn setup Maven Project trong Intelij nhé :<
+- SLF4J: Một cách thần kì nào đấy, Selenium của Java không hề "plug-and-play" như của Python. MMD đã mất cả tiếng đồng hồ loay hoay tìm cách setup SLF4J, chỉ để nhận ra để chạy được Selenium, bên cạnh packet của selenium thì ta cần HAI DEPENDENCY cho SLF4J, và cả hai phải có cùng phiên bản
+- ChromeDriver: Tưởng chừng kiếp nạn đã qua, ai ngờ sóng gió vẫn còn ở phía trước. Vấn đề lớn nhất nằm ở việc setup ChromeDriver, khi:
+  - ChromeDriver cũng KHÔNG ĐI KÈM với Selenium
+  - Có thể sử dụng DriverManager, tuy nhiên con này sẽ TỰ ĐỘNG TẢI PHIÊN BẢN 114 về? Vl luôn?
+Và MMD mất thêm một tiếng nữa lục lọi khắp stackoverflow & chatGPT, cho đến khi tìm được trang web này:
+_https://googlechromelabs.github.io/chrome-for-testing/#beta_
+Thiên đường UwU
