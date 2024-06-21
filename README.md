@@ -23,7 +23,10 @@ Một số kiếp nạn khi setup cái thư viện củ cak kia vào dự án:
 - ChromeDriver: Tưởng chừng kiếp nạn đã qua, ai ngờ sóng gió vẫn còn ở phía trước. Vấn đề lớn nhất nằm ở việc setup ChromeDriver, khi:
   - ChromeDriver cũng KHÔNG ĐI KÈM với Selenium
   - Có thể sử dụng DriverManager, tuy nhiên con này sẽ TỰ ĐỘNG TẢI PHIÊN BẢN 114 về? Vl luôn?
-Và MMD mất thêm một tiếng nữa lục lọi khắp stackoverflow & chatGPT, cho đến khi tìm được trang web này:
-_https://googlechromelabs.github.io/chrome-for-testing/#beta_
+Và MMD mất thêm một tiếng nữa lục lọi khắp stackoverflow & chatGPT, cho đến khi tìm được trang web này: _https://googlechromelabs.github.io/chrome-for-testing/#beta_
+- Cuối cùng, con máy tính của MMD đã kết thúc một ngày tồi tệ bằng cách QUYẾT TÂM KHÔNG CHẠY CODE cho đến khi ĐƯỢC RESTART.
+  Thật sự ấy, mày bắt t ngồi năn nỉ mày 1 TIẾNG ĐỒNG HỒ chỉ để t ấn nút khởi động lại hả?
+Thôi thì, cái gì qua cũng qua rồi... Hẹn gặp lại ngày mai...
+
 
 
