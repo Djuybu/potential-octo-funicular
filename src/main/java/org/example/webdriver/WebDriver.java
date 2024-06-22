@@ -1,6 +1,6 @@
 package org.example.webdriver;
 
-import org.example.publish.Chapter;
+import org.example.entity.Chapter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,7 +42,7 @@ public class WebDriver {
         return links;
     }
 
-    public Chapter getChapterFromParentURL(String url) {
+    private Chapter getChapterFromParentURL(String url) {
         driver.get(url);
 
         String title = driver.findElement(By.cssSelector("h2")).getText();
@@ -53,7 +53,18 @@ public class WebDriver {
         Chapter chapter = new Chapter(title, content);
         System.out.println(chapter.getTitle() + "\n" + chapter.getContent());
 
-        driver.quit();
         return chapter;
+    }
+
+    public ArrayList<Chapter> getChaptersFromParentURL(ArrayList<String> urls) {
+        ArrayList<Chapter> chapters = new ArrayList<>();
+        for (String url : urls) {
+            chapters.add(getChapterFromParentURL(url));
+        }
+        return chapters;
+    }
+
+    public void end() {
+        driver.quit();
     }
 }

@@ -1,4 +1,4 @@
-package org.example.publish;
+package org.example.entity;
 
 public class Chapter {
     private String title;
