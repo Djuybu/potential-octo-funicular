@@ -5,10 +5,10 @@ import org.example.publish.Publisher;
 import org.example.webdriver.WebDriver;
 
 import java.util.ArrayList;
+import java.util.concurrent.*;
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         //initialize web driver
         WebDriver webDriver = new WebDriver();
 
@@ -18,14 +18,13 @@ public class Main {
                         "/truyen/hong-mong-chi-ton-bang-hang-the-ta-tien-de-than-phan-lo-ra-anh-sang");
 
         //get chapters
-        ArrayList<Chapter> book_zero = webDriver.getChaptersFromParentURL(links);
-
-        //turn of webdriver
+        ArrayList<Chapter> chapters = webDriver.getChaptersFromParentURL(links);
+            //turn off webdriver
         webDriver.end();
 
         //create book
         Book book_zero_book = new Book();
-        book_zero_book.setChapterArrayList(book_zero);
+        book_zero_book.setChapterArrayList(chapters);
 
         //publish book to .txt format
         Publisher publisher = new Publisher();
